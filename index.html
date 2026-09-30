@@ -93,6 +93,14 @@
 .subservices span{display:block;font-size:.92rem;color:var(--ink-soft)}
 .hero-card__text h1{max-width:16ch}
 </style>
+<style>
+/* Blød bevægelse ved scroll */
+.js-reveal .rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js-reveal .rv.rv-in{opacity:1;transform:none}
+.js-reveal .rv-d1{transition-delay:.12s}
+.js-reveal .rv-d2{transition-delay:.24s}
+@media (prefers-reduced-motion: reduce){.js-reveal .rv{opacity:1;transform:none;transition:none}}
+</style>
 </head>
 <body>
 
@@ -294,5 +302,24 @@
 </footer>
 
 <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+<script>
+(function(){
+  if(!('IntersectionObserver' in window)) return;
+  document.documentElement.classList.add('js-reveal');
+  var sel=[
+    ['main .eyebrow, .hero-card .eyebrow',''],
+    ['h1, main h2, .pillar',''],
+    ['.hero__lede, .hero__ctas, main section p, .quote','rv-d1']
+  ];
+  var els=[];
+  sel.forEach(function(s){document.querySelectorAll(s[0]).forEach(function(el){
+    if(el.closest('footer')||el.classList.contains('rv'))return;
+    el.classList.add('rv'); if(s[1]) el.classList.add(s[1]); els.push(el);});});
+  var io=new IntersectionObserver(function(entries){entries.forEach(function(e){
+    if(e.isIntersecting){e.target.classList.add('rv-in'); io.unobserve(e.target);}});},
+    {threshold:0.15, rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
 </body>
 </html>
