@@ -1,0 +1,21 @@
+# Private filer – skal ikke med op på GitHub
+.DS_Store
+Claude outputs/
+*.docx
+*.md
+*.pdf
+linkedin-banner-*
+~$*
+
+# Gamle forsider og undersider – holdes ude, indtil de er skrevet om
+index-gammel.html
+index-ny.html
+bestyrelsesarbejde.html
+esg-rapportering.html
+groen-kommunikation.html
+indholdsproduktion.html
+kommunikation.html
+krisekommunikation.html
+ledercoaching.html
+om-rikke.html
+strategi-udvikling.html
