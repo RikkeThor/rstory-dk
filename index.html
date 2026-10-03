@@ -86,6 +86,10 @@
 .pillar details .pillar__arrow{transition:transform .25s ease;font-weight:300}
 .pillar details[open] .pillar__arrow{transform:rotate(45deg)}
 .pillars-title{font-family:'Inter',sans-serif;font-size:.82rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 1rem}
+.mini-quote{margin:2rem 0 0;padding:1.4rem 0 0;border-top:1px solid var(--taupe-deep)}
+.mini-quote blockquote{margin:0 0 .8rem;font-family:'Source Serif 4',serif;font-style:italic;font-size:1.08rem;line-height:1.55;color:var(--teal)}
+.mini-quote figcaption{font-size:.85rem;color:var(--muted)}
+.mini-quote figcaption strong{color:var(--burgundy);font-weight:600}
 .subservices{list-style:none;margin:0 0 1.6rem;padding:0 0 0 clamp(0rem,2vw,1rem);display:grid;gap:.4rem}
 .subservices a,.subservices div{display:block;padding:.8rem 1rem;border-radius:6px;background:rgba(245,239,227,.55);text-decoration:none;color:var(--ink);transition:background .2s ease}
 .subservices a:hover{background:var(--cream)}
@@ -115,7 +119,9 @@
       <div class="site-header__inner" style="padding:0 0 2rem;">
         <a href="index.html" class="brand" aria-label="Rikke Thorbjørn - forside"><span class="brand__name">Rikke Thorbjørn</span><span class="brand__sub">Strategisk rådgiver · Bestyrelsesmedlem</span></a>
         <nav class="nav" aria-label="Primær navigation">
-          <a href="#ydelser" style="color:rgba(250,246,236,.85);">Ydelser</a>
+          <a href="strategi.html" style="color:rgba(250,246,236,.85);">Strategi</a>
+          <a href="krisekommunikation.html" style="color:rgba(250,246,236,.85);">Krise</a>
+          <a href="#bestyrelse" style="color:rgba(250,246,236,.85);">Bestyrelse</a>
           <a href="#om" style="color:rgba(250,246,236,.85);">Om Rikke</a>
           <a href="#kontakt" class="btn btn--small" style="background:var(--cream); color:var(--accent); border-color:var(--cream);">Kontakt</a>
         </nav>
@@ -187,7 +193,7 @@
   </section>
 
   <!-- BESTYRELSE -->
-  <section style="background:var(--cream-warm); padding: clamp(3.5rem, 6vw, 5.5rem) 0;">
+  <section id="bestyrelse" style="background:var(--cream-warm); padding: clamp(3.5rem, 6vw, 5.5rem) 0;">
     <div class="container two-col">
       <div>
         <span class="eyebrow">Bestyrelse</span>
@@ -195,6 +201,10 @@
       </div>
       <div>
         <p>Som bestyrelsesmedlem er jeg med til at sætte retning og holde virksomheden op på de mål, vi har aftalt. Jeg følger op på, om der kommer handling bag beslutningerne, og udfordrer, når ambitioner og indsats ikke hænger sammen. Jeg er ofte den, der stiller de spørgsmål, som er ubekvemme her og nu, men nødvendige, hvis virksomheden skal lykkes på lang sigt. Jeg bidrager med erfaring inden for strategi, kommunikation, forretningsudvikling og grøn omstilling.</p>
+        <figure class="mini-quote">
+          <blockquote>”Rikke Thorbjørn er en skarp kommunikator, både på SoMe, skriftlig fremstilling og direkte tale. En gevinst for enhver bestyrelse, hvor Rikke har nemt ved at analysere situationen fra helikopterperspektiv, tage ansvar og igangsætte de nødvendige tiltag.”</blockquote>
+          <figcaption><strong>Peter Schwalbe</strong> · Tidligere bestyrelseskollega i Erhvervsforum Roskilde</figcaption>
+        </figure>
       </div>
     </div>
   </section>
