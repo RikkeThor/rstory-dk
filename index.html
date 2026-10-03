@@ -85,6 +85,7 @@
 .pillar details > summary:focus-visible{outline:2px solid var(--burgundy);outline-offset:4px}
 .pillar details .pillar__arrow{transition:transform .25s ease;font-weight:300}
 .pillar details[open] .pillar__arrow{transform:rotate(45deg)}
+.pillars-title{font-family:'Inter',sans-serif;font-size:.82rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 1rem}
 .subservices{list-style:none;margin:0 0 1.6rem;padding:0 0 0 clamp(0rem,2vw,1rem);display:grid;gap:.4rem}
 .subservices a,.subservices div{display:block;padding:.8rem 1rem;border-radius:6px;background:rgba(245,239,227,.55);text-decoration:none;color:var(--ink);transition:background .2s ease}
 .subservices a:hover{background:var(--cream)}
@@ -197,37 +198,48 @@
     </div>
   </section>
 
-  <!-- PILLARS: 4 strategiske søjler -->
+  <!-- ANDRE YDELSER -->
   <section id="ydelser" class="pillars-section">
     <div class="container">
       <div class="pillars-section__inner">
         <h2 class="pillars-section__label">Ydelser</h2>
+        <div>
+          <h3 class="pillars-title">Andre ydelser</h3>
         <ul class="pillars" role="list">
           <li class="pillar">
             <details>
               <summary>
-                <span>Krisekommunikation</span>
+                <span>Presse og omtale</span>
                 <span class="pillar__arrow" aria-hidden="true">+</span>
               </summary>
-              <ul class="subservices" role="list"><li><div><strong>Krisehåndtering</strong><span>Konkurser, pressesager og omdømme – i tæt samarbejde med advokater</span></div></li></ul>
+              <ul class="subservices" role="list"><li><div><span>Pressestrategi og historier, der giver din virksomhed synlighed i medierne</span></div></li></ul>
             </details>
           </li>
           <li class="pillar">
             <details>
               <summary>
-                <span>Strategisk rådgivning</span>
+                <span>Indholdsproduktion</span>
                 <span class="pillar__arrow" aria-hidden="true">+</span>
               </summary>
-              <ul class="subservices" role="list"><li><div><strong>Rådgivning ved større skift</strong><span>Risiko for konkurs, mulighed for fusion eller fx nye markeder</span></div></li><li><a href="strategi.html"><strong>Strategi</strong><span>Strategisk fundament og kommunikationsstrategi</span></a></li><li><div><strong>Presse og omtale</strong><span>Pressestrategi og historier, der giver din virksomhed synlighed i medierne</span></div></li><li><div><strong>Indholdsproduktion</strong><span>Tekster, video og hjemmesider i høj kvalitet – hurtigt med AI</span></div></li><li><div><strong>Ledercoaching &amp; personlig branding</strong><span>Sparring om svære beslutninger, din rolle som leder, lederkommunikation og din personlige profil</span></div></li></ul>
+              <ul class="subservices" role="list"><li><div><span>Tekster, video og hjemmesider i høj kvalitet – hurtigt med AI</span></div></li></ul>
             </details>
           </li>
           <li class="pillar">
             <details>
               <summary>
-                <span>Bestyrelsesarbejde</span>
+                <span>Ledercoaching &amp; personlig branding</span>
                 <span class="pillar__arrow" aria-hidden="true">+</span>
               </summary>
-              <ul class="subservices" role="list"><li><div><strong>Bestyrelsesarbejde</strong><span>Strategi, krisehåndtering og kommunikation mellem bestyrelse, direktion og ejere</span></div></li></ul>
+              <ul class="subservices" role="list"><li><div><span>Sparring om svære beslutninger, din rolle som leder, lederkommunikation og din personlige profil</span></div></li></ul>
+            </details>
+          </li>
+          <li class="pillar">
+            <details>
+              <summary>
+                <span>Interessenthåndtering</span>
+                <span class="pillar__arrow" aria-hidden="true">+</span>
+              </summary>
+              <ul class="subservices" role="list"><li><div><span>Dialogen med kommune, myndigheder, naboer og investorer – fx ved større projekter og forandringer</span></div></li></ul>
             </details>
           </li>
           <li class="pillar">
@@ -240,6 +252,7 @@
             </details>
           </li>
         </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -278,7 +291,7 @@
     <div class="container two-col">
       <div>
         <span class="eyebrow">Om Rikke</span>
-        <h2>Journalist, kommunikationsrådgiver og bestyrelsesmedlem</h2>
+        <h2>Journalist, strategisk rådgiver og bestyrelsesmedlem</h2>
       </div>
       <div>
         <p>I mere end 20 år har jeg arbejdet med strategi og kommunikation – som projektleder, som CCO og som rådgiver for ejerledere, direktioner og bestyrelser.</p>
